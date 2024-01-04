@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | GitHub user search app</title>
+  <link rel="stylesheet" href="./style/main.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <div class="app">
+      <header class="header">
+        <div class="header__logo">
+          devfinder
+        </div>
+        <div class="header__switch">
+          <div class="header__switch__txt">
+            dark
+          </div>
+          <div class="header__switch__img">
+            <img src="./assets/icon-moon.svg" alt="" data-theme="light">
+            <img src="./assets/icon-sun.svg" alt="" data-theme="dark">
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="search">
+          <div class="search__lens">
+            <img src="./assets/icon-search.svg" alt="">
+          </div>
+          <input type="text" class="search__input" placeholder="Search GitHub username…">
+          <div class="search__err">No results</div>
+          <button class="search__button">
+            Search
+          </button>
+        </div>
+        <div class="result">
+          <div class="result__img">
+            <img src="./assets/avatar.png" alt="">
+          </div>
+          <div class="result__header__title">
+            The Octocat
+          </div>
+          <div class="result__header__date">
+            Joined 25 Jan 2011
+          </div>
+          <div class="result__user">
+            @octocat
+          </div>
+          <div class="result__bio">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+          </div>
+          <div class="result__table">
+            <div class="table__item">
+              <div class="item__title">
+                Repos
+              </div>
+              <div class="item__desc item__desc--repos">
+                8
+              </div>
+            </div>
+            <div class="table__item">
+              <div class="item__title">
+                Followers
+              </div>
+              <div class="item__desc item__desc--followers">
+                3938
+              </div>
+            </div>
+            <div class="table__item">
+              <div class="item__title">
+                Following
+              </div>
+              <div class="item__desc item__desc--following">
+                9
+              </div>
+            </div>
+          </div>
+          <div class="result__footer">
+            <div class="footer__item">
+              <div class="item__img">
+                <img src="./assets/icon-location.svg" alt="">
+              </div>
+              <div class="item__txt js-location-txt">San Francisco</div>
+            </div>
+            <div class="footer__item">
+              <div class="item__img">
+                <img src="./assets/icon-twitter.svg" alt="">
+              </div>
+              <div class="item__txt js-twitter-txt">@octocat</div>
+            </div>
+            <div class="footer__item">
+              <div class="item__img">
+                <img src="./assets/icon-website.svg" alt="">
+              </div>
+              <div class="item__txt js-blog-txt">https://github.blog</div>
+            </div>
+            <div class="footer__item">
+              <div class="item__img">
+                <img src="./assets/icon-company.svg" alt="">
+              </div>
+              <div class="item__txt js-company-txt">@github</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
