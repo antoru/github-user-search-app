@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: []()
+- Live Site URL: [https://antoru.github.io/github-user-search-app/](https://antoru.github.io/github-user-search-app/)
 
 ## My process
 
