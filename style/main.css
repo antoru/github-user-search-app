@@ -560,4 +560,7 @@ body.dark-mode .page .app .main .result__footer .footer__item .item__txt {
     font-size: 1.3rem;
     margin-left: 2rem;
   }
+}
+.page .app .main .result__footer .footer__item .item__txt a {
+  color: #4B6A9B;
 }/*# sourceMappingURL=main.css.map */

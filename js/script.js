@@ -66,9 +66,9 @@ const searchUser = async (user) => {
         search__err.style.display = 'none';
 
         result__img.src = avatar_url && avatar_url;
-        result__user.textContent = username && username;
-        result__header__title.textContent = name ? name : 'Not available';
-        result__bio.textContent = bio ? bio : 'Not available';
+        result__user.textContent = username && `@${username}`;
+        result__header__title.textContent = name ? name : username;
+        result__bio.textContent = bio ? bio : 'This profile has no bio';
 
         result__header__date.textContent = formattedDate;
         item__desc__repos.textContent = repos;
@@ -76,7 +76,7 @@ const searchUser = async (user) => {
         item__desc__following.textContent = following;
 
         if (location) {
-            item__txt__location.textContent = location ? location : 'Not available';
+            item__txt__location.textContent = location;
         } else {
             item__txt__location.textContent = 'Not available';
             document.querySelectorAll('.footer__item')[0].classList.add('footer__item--notAvailable');
@@ -90,7 +90,7 @@ const searchUser = async (user) => {
         }
 
         if (blog) {
-            item__txt__blog.textContent = blog;
+            item__txt__blog.innerHTML = `<a href="${blog}">${blog}</a>`;
         } else {
             item__txt__blog.textContent = 'Not available';
             document.querySelectorAll('.footer__item')[2].classList.add('footer__item--notAvailable');
